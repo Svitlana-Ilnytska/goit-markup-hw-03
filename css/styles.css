@@ -1,3 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
 
 :root {
     --primery-background-color: #E5E5E5;
@@ -41,6 +52,10 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+}
+
+.site-nav .communication a {
+    color: var(--title-text-color);
 }
 
 .site-nav a:hover,
