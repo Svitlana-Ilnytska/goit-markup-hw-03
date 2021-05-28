@@ -18,20 +18,44 @@ html {
     --hero-text-color: #FFFFFF;
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --background-button-color: #F5F4FA;
+    --background-hero-color: #2F303A;
 }
 
 body {
     background-color: var(--primery-background-color);
     color: var(--title-text-color);
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
 
 /* header */
+
+.page-header {
+    background-color: var(--hero-text-color);
+}
 
 .logo {
     color: var(--healines-text-color);
@@ -69,14 +93,23 @@ ul {
 
 /* hero */
 
+.hero {
+    background-color: var(--background-hero-color);
+    text-align: center;
+}
+
 .hero-title {
     color: var(--hero-text-color);
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    display: inline-block;
+   
+    
 }
 
 .button {
@@ -87,8 +120,15 @@ ul {
     font-size: 16px;
     line-height: 1.87;
     cursor: pointer;
-    
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;  
+    align-items: center;
+    text-align: center;  
+    /* display: inline-block;
+    margin-top: 30px; */
 }
+
 
 .button-list {
     color: var(--healines-text-color);
@@ -98,6 +138,8 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .button-list:hover,
@@ -108,12 +150,22 @@ ul {
 
 /* section */
 
+.section {
+    background-color: var(--primery-background-color);
+}
+
+.section-secondary {
+    background-color: var(--background-button-color);
+}
+
 .section .section-title {
     color: var(--healines-text-color);
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .section .description {
@@ -159,6 +211,11 @@ ul {
     line-height: 1.87;  
 }
 /* footer */
+
+.page-footer {
+    background-color: var(--background-hero-color);
+}
+
 .logo-footer{
     color: var(--hero-text-color);
     font-family: Raleway, sans-serif;
