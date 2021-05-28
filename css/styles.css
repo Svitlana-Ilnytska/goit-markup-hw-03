@@ -58,6 +58,10 @@ p {
 }
 
 .logo {
+    display: block;
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 25px;
     color: var(--healines-text-color);
     font-family: Raleway, sans-serif;
     font-weight: bold;
@@ -70,7 +74,12 @@ p {
     color: var(--accent-color);
 }
 
-.site-nav a {
+.site-nav .item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+
     color: var(--healines-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -78,8 +87,29 @@ p {
     text-decoration: none;
 }
 
+.site-nav .item:last-child {
+    margin: 0;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
 .site-nav .communication a {
     color: var(--title-text-color);
+    display: block;
+    margin-right: 50px;
+    margin-left: 331px;
+}
+
+.site-nav .communication:last-child a {
+    margin: 0;
 }
 
 .site-nav a:hover,
@@ -90,6 +120,7 @@ p {
 .site-nav .link.current {
     color: var(--accent-color);
 }
+
 
 /* hero */
 
@@ -140,6 +171,7 @@ p {
     cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
+    border: 1px solid transparent;
 }
 
 .button-list:hover,
@@ -152,9 +184,13 @@ p {
 
 .section {
     background-color: var(--primery-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-secondary {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--background-button-color);
 }
 
@@ -175,6 +211,7 @@ p {
 }
 
 .section-work {
+    margin-bottom: 50px;
     color: var(--healines-text-color);
     font-weight: bold;
     font-size: 36px;
@@ -197,6 +234,29 @@ p {
 
 }
 
+.future-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.future-list .item {
+    width: 270px;
+    
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.examples .icons {
+    margin-right: 30px;
+}
+.examples .icons:last-child {
+    margin: 0;
+}
+
 /* section portfolio */
 
 .section .list-works {
@@ -210,6 +270,21 @@ p {
     font-size: 16px;
     line-height: 1.87;  
 }
+
+.employee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.employee .list-workers {
+    margin-right: 30px;
+}
+
+.icons-discription {
+    display: block;
+}
+
 /* footer */
 
 .page-footer {
